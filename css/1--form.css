@@ -1,0 +1,41 @@
+input,
+textarea,
+select {
+  display: flex;
+  border: 2px solid #EBEAED;
+  border-radius: 10px;
+  width: 100%;
+  min-height: 60px;
+  padding: 0 20px;
+  font-weight: 500px;
+  color: #000;
+  font-family: inherit;
+  font-weight: inherit;
+  outline: none;
+  transition: 0.3s;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-weight: inherit;
+  font-size: inherit;
+  color: rgba(21, 20, 57, 0.4);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #4626e8;
+}
+
+input {}
+
+textarea {
+  padding: 20px;
+  height: 170px;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 600px;
+  min-height: 100px;
+}

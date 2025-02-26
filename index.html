@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -14,18 +14,30 @@
 </head>
 
 <body>
-  <p class="top__text">Get Started</p>
-  <h1 class="top__titlle">Get in Touch with Us</h1>
 
+  <div class="contacts">
+    <div class="container">
 
-  <div class="container__middle">
-    <textarea name="your-message" id="message" placeholder="Your message"></textarea>
-    <input class="email" type="email" placeholder="Your email">
-    <a class="send">Send</a>
+      <p class="contacts__text">Get Started</p>
+      <h1 class="contacts__title">Get in Touch with Us</h1>
+
+      <form class="container__middle d-flex flex-wrap gap-30px" method="post" enctype="multipart/form-data"
+        action="https://lessons.inderio.com/sendForm.php">
+        <textarea class="message fz-18px" name="user-message" id="message" placeholder="Your message">sdfasdf</textarea>
+        <input class="email bdrs-full fz-16px" name="user-email" type="email" placeholder="Your email"
+          value="sdfs@sdfsd">
+
+        <button class="btn-send">Send</button>
+      </form>
+
+    </div>
   </div>
 
+
+
+
   <div class="cards">
-    <div class="cards__container">
+    <div class="cards__container d-flex flex-jcsb flex-wrap gap-30px">
       <div class="card">
         <p class="card__top">New York, NY</p>
         <p class="card__bottom">62 West 55th Street, Suite 302 New York, NY, 10230</p>
